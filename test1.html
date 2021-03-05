@@ -3,17 +3,48 @@
     <head>
         <meta charset="utf-8" /> 
         <title>Site2</title>
+        <style>
+            *{ margin:0; padding:0;} /* 전체 마진 패딩 없애기 */
+            ul,li{ list-style: none;} /* list구분자 없애기 */
+            ul{
+                width:100%;
+            }
+           ul{
+               background: red;
+               text-align:center;
+           }
+           div{
+               width:300px;
+           }
+           #btn {
+               margin-top: 10px;
+               background:#333;
+               border: 1px solid #666;
+               color: #000;
+               width:300px;
+               height:30px;
+           }
+        </style>
+        <script type="text/javascript">
+            function frm_chk(){
+                alert("회원가입완료")
+            }
+        </script>
+            
+
     </head>
     <body>
-        <ul>
-            <li>아이디: <input type="text" placeholder="아이디를 입력하세요" /></li>
-            <li>비밀번호: <input type="password" placeholder="패스워드를 입력하세요" /></li>
-            <li>비밀번호 확인: <input type="password" placeholder="패스워드를 다시 입력하세요" /></li>
-            <li>생년월일: <input type="text" placeholder="생년월일을 입력하세요" /></li>
-            <li>성별: <input type="radio" name="gender" value="male">남자 <input type="radio" name="gender" value="female" /></li>
-            <li>전화번호: <input type="text" size=6>-<input type="text" size=6>-<input type="text" size=6></li>
-            <li>취미: <input type="checkbox" name="hobby" value="book">독서 <input type="checkbox" name="hobby" value="walk">산책 <input type="checkbox" name="hobby" value="tv">TV </li>
-            <input type="button" value="회원가입하기">
-        </ul>
+        <div>
+            <ul>
+                <li><span>아이디</span><input type="text" placeholder="아이디를 입력하세요" /></li>
+                <li><span>비밀번호</span><input type="password" placeholder="패스워드를 입력하세요" /></li>
+                <li><span>비밀번호 확인</span> <input type="password" placeholder="패스워드를 다시 입력하세요" /></li>
+                <li>생년월일<input type="text" placeholder="생년월일을 입력하세요" /></li>
+                <li>성별<input type="radio" name="gender" value="male">남자 <input type="radio" name="gender" value="female" /></li>
+                <li>전화번호<input type="text" size=6>-<input type="text" size=6>-<input type="text" size=6></li>
+                <li>취미<input type="checkbox" name="hobby" value="book">독서 <input type="checkbox" name="hobby" value="walk">산책 <input type="checkbox" name="hobby" value="tv">TV </li>
+                <input id="btn" type="button" value="회원가입하기" onclick="frm_chk()">
+            </ul>
+        </div>
 
     </body>
