@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div>김승원</div> <!-- block style - 한 줄 전체 영역 차지 -->
+    <div>김동철</div> <!-- 색은 지정 영역의 크기 만큼만 차지하지만 block은 여전히 한 줄 전체를 차지한다 -->
+    <div>이우성</div> <!-- css에서 display: inline; 으로 변경 가능 -> span과 동일해진다 -->
+    <div>이혜준</div> <!-- inline style의 경우 css가 제대로 적용되지 않는 경우가 있다 -->
+    <div>도정현</div> <!-- inline-block으로 설정해주면 비슷한 형태로 설정 가능 -->
+    <div>허유영</div> <br /><br />
+    <!-- float: left; 를 사용하면 span이나 div의 block에 빈공간 없이 출력된다
+            -> 비어있는 영역을 강제로 삭제한다
+    -->
+
+    <span>김승원</span> <!-- inline style - text 크기 만큼의 영역을 차지 -->
+    <span>김동철</span>
+    <span>이우성</span>
+    <span>이혜준</span>
+    <span>도정현</span>
+    <span>허유영</span>
+</body>
+</html>
